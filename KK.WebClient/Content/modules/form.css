@@ -1,0 +1,229 @@
+.form {
+}
+
+.form--apply {
+    background: #F2F2F2;
+    color: #404040;
+}
+
+fieldset {
+    border: none;
+}
+
+.form__fields {
+    font-size: 1.5rem;
+}
+
+.form__fields--hr {
+    border-bottom: 0.1rem solid #D9D9D9;
+    padding: 0 4% 1.5rem ;
+}
+
+.form__legend,
+.form__fieldset-title {
+    color: #404040;
+    margin: 0 1.5rem
+}
+
+.form__fieldset-title--highlight {
+    color: #8A8A8A;
+}
+
+.form__field {
+    border: #D9D9D9 solid 0.1rem;
+    background-color: #FFFFFF;
+    margin : 1.7rem 0;
+    padding: 0.2rem 1.3rem;
+}
+
+.form__field--transparent {
+    background-color: transparent;
+    border: none;
+}
+
+.form__field--spacing {
+    margin: 1rem 0 0 0;
+}
+
+.form__field--textarea {
+    width: 100%;
+    max-height: 19rem;
+    color: #8A8A8A;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    resize: none;
+}
+
+.form__field__input {
+    width:89%;
+    border: none;
+    color: #404040;
+    padding: 1rem 0;
+    background: none;
+
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+.form__field__input[type="search"] {
+    width: 100%;
+}
+
+.form--apply .form__field__input,
+.form--apply .form__field--textarea {
+    color: #404040;
+    width: 100%;
+}
+
+.form__field_input--highlight {
+    color: #0066CC;
+}
+
+.form__field_input--no-shadow {
+    box-shadow: none;
+}
+
+.form__field_input--small-width {
+    width: 70%;
+}
+.form__field--invalid .form__field__input {
+    width: 80%;
+}
+
+.form__field__input:focus {
+    outline: none;
+}
+
+.form__field--input-button {
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 0.2rem 0.2rem 0.1rem 0.6rem;
+    min-height: 4.4rem;
+
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    border-radius: 0.3;
+
+    -webkit-box-shadow: 0 0.1rem 0.2rem #d5d5d5;
+    -moz-box-shadow: 0 0.1rem 0.2rem #d5d5d5;
+    box-shadow: 0 0.1rem 0.2rem #d5d5d5;
+
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#fbfbfb));
+    background-image: -webkit-linear-gradient(top, #ffffff, #fbfbfb);
+    background-image:    -moz-linear-gradient(top, #ffffff, #fbfbfb);
+    background-image:     -ms-linear-gradient(top, #ffffff, #fbfbfb);
+    background-image:      -o-linear-gradient(top, #ffffff, #fbfbfb);
+    background-image:         linear-gradient(top, #ffffff, #fbfbfb);
+
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+
+    border: 0.1rem solid rgba(255, 255, 255, 1);
+}
+
+.form__field--input-button select,
+.form__field--input-button a {
+    color: #0066cc;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 1);
+    text-decoration: none;
+
+    max-width: 90%;
+    line-height: 1;
+    padding-top: 1rem;
+}
+
+.form__field--input-button a {
+    padding-top: 1.2rem;
+}
+
+.form__field--input-button select {
+    width: 88%;
+}
+
+.form__field--input-button--large {
+    min-height: 5.5rem;
+    font-size: 1.8rem;
+}
+
+.form__field__error-message {
+    color: #FF1493;
+    font-weight: bold;
+    margin: -1rem 1.5rem 1rem;
+}
+
+.form__field__error-message--small {
+    margin: -1rem 1.5rem;
+}
+
+.form__error-message {
+    color: #FF1493;
+    font-weight: bold;
+    margin: 1.5rem;
+}
+
+.form__field--invalid {
+    border: #FF1493 solid 0.1rem;
+}
+
+.form__field__icon-standin__top {
+    color: #F00A81;
+    font-size: 1.4rem;
+    left: 0.7rem;
+    position: absolute;
+    min-width: 2rem;
+}
+
+.form__field__icon-standin__bottom {
+    color: #8A8A8A;
+    font-size: 0.8rem;
+}
+
+.form__field__icon-standin__sup {
+    right: 0.4rem;
+    font-size: 1.1rem;
+}
+
+.form__field__icon {
+    font-size: 2.2rem;
+}
+
+.form__field__icon--valid,
+.form__field__icon--error {
+    color: #FF1493;
+    font-size: 1.8rem;
+    padding: 0.5rem 0;
+}
+.form__field__icon--valid {
+    color: #3DB42B;
+    line-height: 1;
+    top: 0.7rem;
+}
+
+.form__field__icon-down {
+    position: absolute;
+    right: 0.2rem;
+    font-size:1.4rem;
+    line-height: 3.8rem;
+}
+
+.form__field__icon--flow,
+.form__field__icon--position {
+    position: absolute;
+    left: 0.6rem;
+}
+.form__field__icon--position {
+    left: auto;
+    right: 1.4rem;
+    top: -0.5rem;
+}
+
+.form__field__icon--flow--end {
+    position: absolute;
+    right: 0.6rem;
+}
+
+.form__field__footnote {
+    line-height: 0.8;
+    margin: 0 0 1.5rem 1.3rem;
+}

@@ -1,0 +1,15 @@
+﻿@model List<KK.Domain.Models.CarAds>
+
+@{
+    ViewBag.Title = "Car Ads";    
+}
+
+
+<h2>Car Listing</h2>
+<ul class="uilist-none grid__cell grid__cell--center margin-an padding-an">
+    @foreach (var carAds in Model)
+    {      
+        Html.RenderPartial("_CarAdsDetail", carAds);      
+    }
+    
+</ul>

@@ -1,0 +1,124 @@
+/* ==========================================================================
+   Spacing-specific utilities
+   ========================================================================== */
+
+/**
+ * Used to adjust the default spacing between components
+ * Use with great care!
+ *
+ * <type>-<location><size>
+ *
+ * a = all
+ * t = top
+ * r = right
+ * b = bottom
+ * l = left
+ * h = horizontal
+ * v = vertical
+ *
+ * n = none
+ * s = small
+ * m = medium
+ * l = large
+ */
+
+/* All */
+
+.padding-an { padding: 0 !important; }
+.padding-as { padding: 0.5rem !important; }
+.padding-am { padding: 1rem !important; }
+.padding-al { padding: 2rem !important; }
+
+.margin-an { margin: 0 !important; }
+.margin-as { margin: 0.5rem !important; }
+.margin-am { margin: 1rem !important; }
+.margin-al { margin: 2rem !important; }
+
+/* Vertical */
+
+.padding-vn { padding-top: 0 !important; padding-bottom: 0 !important; }
+.padding-vs { padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; }
+.padding-vm { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+.padding-vmm { padding-top: 1.5rem !important; padding-bottom: 1.5rem !important; }
+.padding-vl { padding-top: 2rem !important; padding-bottom: 2rem !important; }
+
+.margin-vn { margin-top: 0 !important; margin-bottom: 0 !important; }
+.margin-vs { margin-top: 0.5rem !important; margin-bottom: 0.5rem !important; }
+.margin-vm { margin-top: 1rem !important; margin-bottom: 1rem !important; }
+.margin-vl { margin-top: 2rem !important; margin-bottom: 2rem !important; }
+
+/* Horizontal */
+
+.padding-hn { padding-left: 0 !important; padding-right: 0 !important; }
+.padding-hs { padding-left: 0.5rem !important; padding-right: 0.5rem !important; }
+.padding-hm { padding-left: 1rem !important; padding-right: 1rem !important; }
+.padding-hl { padding-left: 2rem !important; padding-right: 2rem !important; }
+.padding-hxl { padding-left: 2.5rem !important; padding-right: 2.5rem !important; }
+
+.margin-hn  { margin-left: 0 !important; margin-right: 0 !important; }
+.margin-hs  { margin-left: 0.5rem !important; margin-right: 0.5rem !important; }
+.margin-hm  { margin-left: 1rem !important; margin-right: 1rem !important; }
+.margin-hmm { margin-left: 1.5rem !important; margin-right: 1.5rem !important; }
+.margin-hl  { margin-left: 2rem !important; margin-right: 2rem !important; }
+.margin-hxl  { margin-left: 2.5rem !important; margin-right: 2.5rem !important; }
+
+/* Top */
+
+.padding-tn { padding-top: 0 !important; }
+.padding-txs { padding-top: 0.2rem !important; }
+.padding-ts { padding-top: 0.5rem !important; }
+.padding-tm { padding-top: 1rem !important; }
+.padding-tmm { padding-top: 1.7rem !important; }
+.padding-tl { padding-top: 2rem !important; }
+
+.margin-tn  { margin-top: 0 !important; }
+.margin-ts  { margin-top: 0.5rem !important; }
+.margin-tsm  { margin-top: 0.8rem !important; }
+.margin-tm  { margin-top: 1rem !important; }
+.margin-tmm { margin-top: 1.5rem !important; }
+.margin-tl  { margin-top: 2rem !important; }
+.margin-txl { margin-top: 2.8rem !important; }
+
+/* Bottom */
+
+.padding-bn { padding-bottom: 0 !important; }
+.padding-bs { padding-bottom: 0.5rem !important; }
+.padding-bm { padding-bottom: 1rem !important; }
+.padding-bl { padding-bottom: 2rem !important; }
+
+.margin-bn { margin-bottom: 0 !important; }
+.margin-bxs { margin-bottom: 0.1rem !important; }
+.margin-bs { margin-bottom: 0.5rem !important; }
+.margin-bm { margin-bottom: 1rem !important; }
+.margin-bl { margin-bottom: 2rem !important; }
+
+/* Left */
+
+.padding-ln  { padding-left: 0 !important; }
+.padding-lxs  { padding-left: 0.1rem !important; }
+.padding-ls  { padding-left: 0.5rem !important; }
+.padding-lm  { padding-left: 1rem !important; }
+.padding-lmm  { padding-left: 1.5rem !important; }
+.padding-ll  { padding-left: 2rem !important; }
+.padding-lxl { padding-left: 2.5rem !important; }
+.padding-lxxl { padding-left: 3rem !important; }
+
+.margin-ln  { margin-left: 0 !important; }
+.margin-lxs { margin-left: 0.2rem !important; }
+.margin-ls  { margin-left: 0.5rem !important; }
+.margin-lm  { margin-left: 1rem !important; }
+.margin-ll  { margin-left: 2rem !important; }
+.margin-lxl { margin-left: 2.5rem !important; }
+
+/* Right */
+
+.padding-rn { padding-right: 0 !important; }
+.padding-rs { padding-right: 0.5rem !important; }
+.padding-rm { padding-right: 1rem !important; }
+.padding-rmm { padding-right: 1.5rem !important; }
+.padding-rl { padding-right: 2rem !important; }
+
+.margin-rn { margin-right: 0 !important; }
+.margin-rs { margin-right: 0.5rem !important; }
+.margin-rm { margin-right: 1rem !important; }
+.margin-rl { margin-right: 2rem !important; }

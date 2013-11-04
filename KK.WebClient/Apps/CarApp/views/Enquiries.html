@@ -1,0 +1,14 @@
+﻿<div data-ng-controller="EnquiriesController">
+    <h2>Enquiries</h2>
+    <ul class="uilist-none grid__cell grid__cell--center margin-an padding-an">
+        <li class="result result--listings nbfc margin-bm padding-ll padding-rmm" data-ng-repeat="enquiry in model.enquiries">
+            <div class="relative highlight-none">
+                <h3>{{enquiry.name}} - {{enquiry.emailAddress}}</h3>                
+                <a data-ng-href="/car/detail/{{ enquiry.carAds.id}}" class="result--listings__listing result--listings__listing--a link-block">
+                    <h1 class="result__title--new text-break text-normal margin-bn">{{enquiry.carAds.carListed.make}} {{ enquiry.carAds.carListed.model }} {{ enquiry.carAds.carListed.year }}</h1>                    
+                    <h2 class="result__sub-title--new result__sub-title--highlight margin-an">{{ enquiry.carAds.listedDate | date:'medium' }}</h2>                    
+                </a>                
+            </div>
+        </li>
+    </ul>
+</div>

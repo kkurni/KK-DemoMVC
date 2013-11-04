@@ -1,0 +1,23 @@
+﻿@using KK.Domain.Models
+@model CarAds
+
+<ul class="uilist-none grid__cell grid__cell--center margin-an padding-an">
+        <li class="result result--listings nbfc margin-bm padding-ll padding-rmm">
+        <div class="relative highlight-none">                
+            <a href="/oldCar/ads/detail/@Model.Id" class="result--listings__listing result--listings__listing--a link-block">
+                <h1 class="result__title--new text-break text-normal margin-bn">@Model.CarListed.Make @Model.CarListed.Model @Model.CarListed.Year</h1>
+                <h2 class="result__sub-title--new result__sub-title--highlight margin-an">
+                    @{
+                        Html.RenderPartial("_CarPriceTag", Model.CarListed);
+                    }
+                </h2>
+                <h2 class="result__sub-title--new result__sub-title--highlight margin-an">@Model.ListedDate.ToShortDateString()</h2>
+                <p>@Model.Comments</p>                    
+                <h5>Contact email address : @Model.ContactDetail.EmailAddress</h5>
+                @{
+                    Html.RenderPartial("_SellerDetail", Model.ContactDetail);
+                }                
+            </a>                
+        </div>
+    </li>    
+</ul>

@@ -1,0 +1,11 @@
+﻿@using KK.Domain.Models
+@model Car
+
+@if (Model.PriceType == CarPriceType.POA)
+{
+    @Html.Raw("POA");
+}
+else
+{
+    @Html.Raw(String.Format("{0:C} {1}", Model.Price, Model.PriceType));
+}

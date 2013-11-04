@@ -1,0 +1,23 @@
+﻿@using KK.Domain.Models
+@using KK.WebClient.Models
+@model CarAds
+
+@{
+    ViewBag.Title = "Car Ads Detail";    
+}
+
+@if (Model != null)
+{
+    <h2>Car Ads Detail</h2>
+    Html.RenderPartial("_CarAdsDetail", Model);
+    Html.RenderPartial("_EnquiryForm", new EnquiryViewModel {CarAdsId = Model.Id});
+}
+else
+{
+    <h2>Unable to find Car ads.</h2>
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

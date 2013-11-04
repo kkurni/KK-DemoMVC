@@ -1,0 +1,10 @@
+﻿@using KK.Domain.Models
+@model SellerDetail
+
+@if (Model is PrivateSellerDetail)
+{
+    Html.RenderPartial("_PrivateSellerDetail", Model as PrivateSellerDetail);
+}
+else{
+    Html.RenderPartial("_DealerSellerDetail", Model as DealerSellerDetail);
+}

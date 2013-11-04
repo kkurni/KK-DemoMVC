@@ -1,0 +1,14 @@
+﻿@model List<KK.Domain.Models.Enquiry>
+
+@foreach (var enquiry in Model)
+{
+    <h3>Name : @enquiry.Name</h3>
+    <h3>Email : @enquiry.EmailAddress</h3>
+
+    if (enquiry.CarAds != null)
+    {
+        Html.RenderPartial("_CarAdsDetail", enquiry.CarAds);   
+    }
+    
+    <hr/>    
+}

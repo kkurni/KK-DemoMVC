@@ -1,0 +1,83 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Tests runner</title>
+        <link type="text/css" href="libs/jasmine.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <!--        runner-->
+        <script src="libs/jasmine.js"> </script>
+        <script src="libs/jasmine-html.js"> </script>
+        
+        <!--        3rd party libs-->
+        <script src="../../KK.WebClient/Scripts/libs/jquery-1.9.1.min.js"> </script>
+        <script src="../../KK.WebClient/Scripts/libs/jquery.unobtrusive-ajax.min.js"> </script>
+        <script src="../../KK.WebClient/Scripts/libs/jquery.validate.js"> </script>
+        
+        <script src="../../KK.WebClient/Scripts/libs/angular.js"> </script>
+        <script src="../../KK.WebClient/Scripts/libs/angular-ng-grid.js"> </script>
+        <script src="../../KK.WebClient/Scripts/libs/angular-resource.js"> </script>        
+        <script src="../../KK.WebClient/Scripts/libs/angular-route.js"> </script>
+        <script src="../../KK.WebClient/Scripts/libs/angular-mocks.js"> </script>
+        
+        <script src="../../KK.WebClient/Scripts/libs/modernizr-2.6.2.js"> </script>
+        
+
+        
+        <!--        app/controller-->
+        <script src="../../KK.WebClient/Apps/carApp/app.js"> </script>
+        <script src="../../KK.WebClient/Apps/carApp/controllers/carAdsController.js"> </script>
+        <script src="../../KK.WebClient/Apps/carApp/controllers/carAdsDetailController.js"> </script>
+        <script src="../../KK.WebClient/Apps/carApp/controllers/enquiryFormController.js"> </script>
+        <script src="../../KK.WebClient/Apps/carApp/controllers/enquiriesController.js"> </script>
+        <script src="../../KK.WebClient/Apps/carApp/controllers/enquiryConfirmationController.js"> </script>
+        <script src="../../KK.WebClient/Apps/carApp/controllers/main.js"> </script>
+        
+        <!--        app/directives-->
+        <script src="../../KK.WebClient/Apps/carApp/directives/kkError.js"> </script>
+        
+        <!--        app/interceptors-->
+        <script src="../../KK.WebClient/Apps/carApp/interceptors/serverErrorInterceptor.js"> </script>
+        
+        <!--        app/services-->
+        <script src="../../KK.WebClient/Apps/carApp/services/carAdsEnum.js"> </script>
+        <script src="../../KK.WebClient/Apps/carApp/services/carAdsEnumParser.js"> </script>
+        <script src="../../KK.WebClient/Apps/carApp/services/carAdsService.js"> </script>
+        <script src="../../KK.WebClient/Apps/carApp/services/enquiryService.js"> </script>
+
+        <!--        tests-->
+        <script src="specs/services/carAdsEnumParser.spec.js"> </script>
+        <script src="specs/services/carAdsService.spec.js"> </script>
+        <script src="specs/services/enquiryService.spec.js"> </script>
+        
+        <script src="specs/controllers/carAdsController.spec.js"> </script>
+        <script src="specs/controllers/carAdsDetailController.spec.js"> </script>
+        <script src="specs/controllers/enquiryFormController.spec.js"> </script>
+        <script src="specs/controllers/enquiriesController.spec.js"> </script>
+        
+       
+        <script>
+
+            $(function() {
+
+                var kickOffJasmine = function() {
+
+                    var jasmineEnv = jasmine.getEnv();
+                    jasmineEnv.updateInterval = 1000;
+
+                    var htmlReporter = new jasmine.HtmlReporter();
+
+                    jasmineEnv.addReporter(htmlReporter);
+
+                    jasmineEnv.specFilter = function(spec) {
+                        return htmlReporter.specFilter(spec);
+                    };
+
+                    jasmineEnv.execute();
+                };
+
+                kickOffJasmine();
+            });
+        </script>
+    </body>
+</html>

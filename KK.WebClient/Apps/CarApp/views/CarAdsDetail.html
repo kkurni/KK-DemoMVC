@@ -1,0 +1,27 @@
+﻿<div data-ng-controller="CarAdsDetailController">
+    <div data-ng-if="model.carAds.carListed">
+        <h2>Car Detail</h2>
+        <div class="relative highlight-none">                
+            <h1 class="result__title--new text-break text-normal margin-bn">{{model.carAds.carListed.make}} {{ model.carAds.carListed.model }} {{ model.carAds.carListed.year }}</h1>
+            <h2 class="result__sub-title--new result__sub-title--highlight margin-an">{{ getCarPriceTag(model.carAds.carListed) }}</h2>
+            <h2 class="result__sub-title--new result__sub-title--highlight margin-an">{{ carAds.carAds.listedDate | date:'medium' }}</h2>
+            <p>{{ model.comments}}</p>                    
+            <h5>Contact email address : {{ model.carAds.contactDetail.emailAddress}}</h5>
+            <h5 data-ng-if="model.carAds.contactDetail.dealerABN">Dealer ABN : {{ model.carAds.contactDetail.dealerABN}}</h5>
+            <h5 data-ng-if="model.carAds.contactDetail.contactName">Contact Name : {{ model.carAds.contactDetail.contactName}}</h5>
+            <h5 data-ng-if="model.carAds.contactDetail.phone">Contact Phone : {{ model.carAds.contactDetail.phone}}</h5>
+        </div>
+
+        <hr/>               
+        
+    </div>
+
+    <div data-ng-include="'/Apps/CarApp/views/_EnquiryForm.html'"></div>        
+
+    <div data-ng-if="!model.carAds.carListed">
+        <h2>Ads not found!</h2>
+    </div>
+</div>
+
+
+

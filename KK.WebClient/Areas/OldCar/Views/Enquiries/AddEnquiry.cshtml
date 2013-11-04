@@ -1,0 +1,12 @@
+﻿@using KK.Domain.Models
+@model Enquiry
+
+<h2>Thanks for enquiry for this car</h2>
+<h3>Name : @Model.Name</h3>
+<h3>Email Address : @Model.EmailAddress</h3>
+@{
+    if (Model.CarAds != null)
+    {
+        Html.RenderPartial("_CarAdsDetail", Model.CarAds);    
+    }    
+}

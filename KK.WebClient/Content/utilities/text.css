@@ -1,0 +1,161 @@
+/* ==========================================================================
+   Text utilities
+   ========================================================================== */
+
+/**
+ * Text truncation
+ *
+ * Prevent text from wrapping onto multiple lines, and truncate with an
+ * ellipsis.
+ *
+ * 1. Ensure that the node has a maximum width after which truncation can
+ *    occur.
+ * 2. Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
+ *    nodes.
+ */
+
+.text-truncate {
+    max-width: 100%; /* 1 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal; /* 2 */
+}
+
+/**
+ * Word breaking
+ *
+ * Break strings when their length exceeds the width of their container.
+ */
+
+.text-break {
+    word-break: break-all;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+/**
+ * No Word breaking
+ *
+ * Force strings to not break even though they don't have room.
+ */
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Horizontal text alignment
+ */
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Vertical text alignment
+ */
+
+ .text-top {
+    vertical-align: top;
+ }
+
+ .text-bottom {
+    vertical-align: bottom;
+ }
+
+/* -------------------------------------------------------------------------- */
+/**
+ * Text properties
+ */
+.text-normal {
+    font-weight: normal;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-normalise-leading {
+    line-height: 1;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/**
+ * Text common font-sizes
+ */
+.text-small {
+    font-size: 1.2rem;
+}
+
+.text-med {
+    font-size: 1.3rem;
+}
+
+.text-xmed {
+    font-size: 1.5rem;
+}
+
+.text-large {
+    font-size: 1.7rem;
+}
+
+.text-xl {
+    font-size: 2.0rem;
+}
+
+.text-xxl {
+    font-size: 2.5rem;
+}
+
+.text-xxxl {
+    font-size: 2.7rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/**
+ * Text common colours
+ */
+
+.text-default {
+    color: #404040;
+}
+.text-lighter {
+    color: #ACACAC;
+}
+.text-light {
+    color: #8C8C8C;
+}
+
+/* -------------------------------------------------------------------------- */
+/**
+ * Text common colours
+ */
+
+.text-default {
+    color: #404040;
+}
+.text-lighter {
+    color: #ACACAC;
+}
+.text-light {
+    color: #8C8C8C;
+}

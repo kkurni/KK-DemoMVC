@@ -1,0 +1,26 @@
+﻿@model KK.WebClient.Models.EnquiryViewModel
+
+<div>
+    <h2>Enquire Online</h2>
+    @using (Html.BeginForm("AddEnquiry","Enquiries"))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary()
+        <fieldset>
+            <legend>Enquiry Form</legend>            
+            @Html.HiddenFor(m=>m.CarAdsId, Model.CarAdsId)
+            <ol>
+                <li>
+                    @Html.LabelFor(m => m.Name)
+                    @Html.TextBoxFor(m => m.Name)
+                </li>
+                <li>
+                    @Html.LabelFor(m => m.EmailAddress)
+                    @Html.TextBoxFor(m => m.EmailAddress)
+                </li>                
+            </ol>
+            <input type="submit" value="Send" />
+        </fieldset>	
+    }
+    
+</div>    

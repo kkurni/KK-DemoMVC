@@ -1,0 +1,25 @@
+﻿<div data-ng-controller="EnquiryFormController" data-ng-show="model.carAds.id">
+        <h2>Enquire Online</h2>
+        <form name="enquiryForm" novalidate data-kk-form="">
+            <fieldset>
+                <legend>Enquiry Form</legend>			
+                <div class="row-fluid"> 
+                    <div class="controls">
+                        <input type="text" placeholder="name" name="name" data-ng-model="enquiryModel.name" required/>
+                        <span data-kk-error="" data-field-name="name" data-key="required">Required field</span>
+                    </div>			        				
+                </div>                
+                <div class="row-fluid">
+                    <div class="controls">			        					
+                        <input type="email" placeholder="Email address" name="emailAddress" data-ng-model="enquiryModel.emailAddress" required />
+                        <span data-kk-error="" data-field-name="emailAddress" data-key="required">Required field</span>
+                        <span data-kk-error="" data-field-name="emailAddress" data-key="email">Email is invalid</span>
+                    </div>
+                </div>
+                <div>
+                    <button data-ng-click="sendEnquiry()">SEND</button>
+                </div>
+            </fieldset>		
+        </form>    
+    
+</div>    
